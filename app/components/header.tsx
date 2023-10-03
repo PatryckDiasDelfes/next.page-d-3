@@ -10,7 +10,6 @@ export default function Header() {
                 <h1 className="font-bold text-[3em] justify-end">
                     GEBF
                 </h1>
-
                 <div className="">
                     <Nav/>
                 </div>

@@ -10,13 +10,13 @@ export default function PostProp(prop: PostProp) {
 
       <>
         
-        <div>
+        <div className="">
             
-            <h1>
+            <h1 className=" flex font-bold place-items-center">
                 {prop.title}
             </h1>
 
-            <span>
+            <span className="flex p-4 w-[50%]">
                 {prop.text}
             </span>
 

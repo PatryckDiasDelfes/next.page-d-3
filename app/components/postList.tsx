@@ -4,7 +4,7 @@ export default function PostList() {
     return (
       <>
       
-        <section>
+        <section className=" ">
 
             <PostProp 
                 title="post 1" 
