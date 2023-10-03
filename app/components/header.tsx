@@ -15,13 +15,15 @@ export default function Header() {
               alt=""
             />
 
-            <h1 className="font-bold text-[3em]">
-                GEBF
-            </h1>
+            <div>
+              <h1 className="font-bold text-[3em]">
+                  GEBF
+              </h1>
 
-            <p>
-              Grupo de Estudos do Bem Estar Felino
-            </p>
+              <p className="break-inside-auto">
+                Grupo de Estudos do Bem Estar Felino
+              </p>
+            </div>
 
           </div>
 
