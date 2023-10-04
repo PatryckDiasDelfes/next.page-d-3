@@ -34,7 +34,7 @@ export default function PostProp(prop: PostProp) {
 
                 <ol className="list-disc list-inside">
                   {prop.items.map((item:string)=>(
-                    <li>
+                    <li className="flex-col p-2">
                       {item}
                     </li>
                   ))}

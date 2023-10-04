@@ -9,8 +9,8 @@ export default function Article() {
             Quem somos
           </h1>
 
-          <span className="flex justify-center">
-            Somos estudantes da Unisociesc-SC e da UNIFACS-BA e estamos cursando 0 2° semestre de medicina veterinária.
+          <span className="flex indent-5 text-[18px] justify-center px-36">
+            Somos estudantes da Unisociesc-SC e da UNIFACS-BA e estamos cursando 0 2° semestre de medicina veterinária. Nosso intuito é poder ensinar as maneiras mais adequadas de não so poder cuidar e tratar do seu felino como também poder dar uma melhor qualidade de vida para ele. Esperamos que possamos te ajudar com nosso blog a ensinar ou melhorar seu conhecimento sobre os cuidados para com os felinos.
           </span>
 
         </div>
