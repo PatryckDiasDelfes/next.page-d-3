@@ -1,21 +1,29 @@
+import Image from "next/image";
 
 
-export default function nav() {
+export default function Nav() {
     return (
-      <>
       
-        <section className=" flex gap-14">
+        <div className="justify-end flex gap-14">
 
             <button className="border p-2 border-[#070707] border-solid rounded-xl hover:scale-125">
-                click
+            Cadestre-se 
+
+                {/* <Image 
+                  className='flex w-12 h-12 '
+                  src="/instagram.icon"
+                  width={500}
+                  height={500}
+                  alt="Picture of the author"
+                /> */}
+
             </button>
 
             <button className="border p-2 border-[#070707] border-solid rounded-xl hover:scale-125">
-                click
+                Login
             </button>
 
-        </section>
+        </div>
 
-      </>
     )
   }

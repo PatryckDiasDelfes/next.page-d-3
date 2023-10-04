@@ -11,7 +11,7 @@ export default function ParticipantesList(prop: List) {
       
         <div>
 
-            <h1 className="">
+            <h1>
                 {prop.name}
             </h1>
 

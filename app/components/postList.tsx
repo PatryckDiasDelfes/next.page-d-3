@@ -4,11 +4,14 @@ export default function PostList() {
     return (
       <>
       
-        <section className=" ">
+        <section>
+
+          <div className="flex flex-col items-center">
 
             <PostProp 
                 title="post 1" 
-                text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, assumenda, excepturi reprehenderit laborum, in ut accusantium eligendi perspiciatis sunt laudantium numquam! Corrupti magnam harum, distinctio adipisci id quam. Laborum, sequi."
+                text="Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, assumenda, excepturi reprehenderit laborum, in ut accusantium eligendi perspiciatis sunt laudantium numquam! Corrupti magnam harum, distinctio adipisci id quam. Laborum, sequi."
+                
             />
 
             <PostProp 
@@ -20,6 +23,8 @@ export default function PostList() {
                 title="post 3" 
                 text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, assumenda, excepturi reprehenderit laborum, in ut accusantium eligendi perspiciatis sunt laudantium numquam! Corrupti magnam harum, distinctio adipisci id quam. Laborum, sequi."
             />
+
+          </div>
 
         </section>
 

@@ -4,7 +4,7 @@ export default function Footer() {
     return (
       <>
       
-        <section className="flex bg-slate-600 justify-around p-5">
+        <section className="flex bg-[#EBEAB5] justify-around p-5">
 
             <div className="flex place-items-center gap-40">
 
