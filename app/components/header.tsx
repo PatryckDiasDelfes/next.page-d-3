@@ -4,18 +4,18 @@ import Image from "next/image"
 export default function Header() {
     return (
       <>
-        <section className="flex justify-between items-center bg-[#F2C1AE] p-1">   
+        <section className="flex justify-between items-center bg-[#F2C1AE] px-8 py-4">   
 
           <div className="flex items-center">
 
-          <Image className=""
-              src={"/logo.png"}
-              width={250}
-              height={250}
-              alt=""
+            <Image className="w-[30vh] h-[30wh]"
+                src={"/logo.svg"}
+                width={200}
+                height={200}
+                alt=""
             />
 
-            <div>
+            <div className="p-8">
               <h1 className="font-bold text-[3em]">
                   GEBF
               </h1>

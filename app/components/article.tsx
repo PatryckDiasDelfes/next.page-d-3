@@ -3,7 +3,7 @@
 export default function Article() {
     return (
 
-        <div className="p-10">
+        <div className="bg-[#F2C1AE] bg-opacity-50 p-10">
 
           <h1 className="flex font-bold text-[40px] justify-center">
             Quem somos

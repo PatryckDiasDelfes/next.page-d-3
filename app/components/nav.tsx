@@ -4,9 +4,9 @@ import Image from "next/image";
 export default function Nav() {
     return (
       
-        <div className="justify-end flex gap-14">
+        <div className="justify-end flex gap-14 pr-24">
 
-            <button className="border p-2 border-[#070707] border-solid rounded-xl hover:scale-125">
+            <button className="font-bold text-[18px] border p-3 border-[#070707] border-solid rounded-2xl hover:scale-125">
             Cadestre-se 
 
                 {/* <Image 
@@ -19,7 +19,7 @@ export default function Nav() {
 
             </button>
 
-            <button className="border p-2 border-[#070707] border-solid rounded-xl hover:scale-125">
+            <button className="font-bold text-[18px] border p-3 border-[#070707] border-solid rounded-2xl hover:scale-125">
                 Login
             </button>
 

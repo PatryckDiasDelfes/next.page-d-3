@@ -28,15 +28,15 @@ export default function Footer() {
                 <div>
 
                     <h1 className="font-bold">
-                        titulo footer
+                        Redes sociais
                     </h1>
 
                     <ol>
                         <li>
-                            info 1
+                            Instagram
                         </li>
                         <li>
-                            info 2
+                            Ex
                         </li>
                     </ol>
 
