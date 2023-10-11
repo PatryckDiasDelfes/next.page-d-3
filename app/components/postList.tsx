@@ -2,8 +2,7 @@
 
 import { useState } from "react"
 import PostProp from "./postProp"
-import floatingButton from "./floatingButton"
-import FloatingButton from "./floatingButton"
+import AddPostModal from "./addPostModal"
 
 export default function PostList() {
 
@@ -82,8 +81,6 @@ export default function PostList() {
     <>
 
       <section className="bg-[#F2C1AE] bg-opacity-50  pb-14">
-
-        button
       
         <button onClick={() => addPost({
           title:"funfa sim po",
@@ -98,9 +95,8 @@ export default function PostList() {
                   "Crie áreas de observação: Gatos adoram observar o mundo ao seu redor. Posicione prateleiras perto de janelas para que seu gato possa ver a atividade lá fora. Isso também permite que eles tomem sol, o que é benéfico para sua saúde.",
                   "Plante grama de gato: Muitos gatos gostam de mastigar grama, que pode ajudar na digestão. Considere a possibilidade de cultivar grama de gato em vasos dentro de casa para que seu felino tenha acesso a ela."
                 ]
+                
         },)}>Add</button> 
-        <input type="text" />
-        <textarea name="" id="" />
 
         <div className="flex flex-col items-center">
 
@@ -119,7 +115,11 @@ export default function PostList() {
 
         </div>
 
-        <FloatingButton/>
+        <AddPostModal/>
+
+      </section>
+
+      <section>
 
       </section>
 
