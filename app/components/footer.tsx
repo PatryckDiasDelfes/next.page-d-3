@@ -8,12 +8,11 @@ export default function Footer() {
 
             <div className="flex place-items-center gap-40">
 
-                <div className="">
+                <div>
 
                     <h1 className="font-bold">
                         Instituição de Ensino
                     </h1>
-
                     <ol className="">
                         <li>
                         Unisociesc-SC
@@ -24,19 +23,31 @@ export default function Footer() {
                     </ol>
 
                 </div>
-
                 <div>
 
                     <h1 className="font-bold">
                         Redes sociais
                     </h1>
-
                     <ol>
                         <li>
                             Instagram
                         </li>
                         <li>
                             Exemplo
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                
+                    <h1 className="font-bold">
+                        Apoio
+                    </h1>
+                    <ol>
+                        <li>
+                            ELITI
+                        </li>
+                        <li>
+                            AMCOM
                         </li>
                     </ol>
 
@@ -75,6 +86,7 @@ export default function Footer() {
                     </div>
 
                 </ol>
+
             </div>
 
         </section>
