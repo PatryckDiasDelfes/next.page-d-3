@@ -9,7 +9,7 @@ export default function PostList() {
 
   
 
-  const [groupPost, setGroupPost] = useState ( [
+ const [groupPost, setGroupPost] = useState ( [
 
     {
       title:"O que é gatificação?",

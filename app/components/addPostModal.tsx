@@ -1,6 +1,7 @@
 import { title } from "process"
 import { useState } from "react"
 import { IPost } from "../types/post"
+import { randomUUID } from "crypto"
 
 interface exportNewPostModal {
 
@@ -15,11 +16,13 @@ export default function AddPostModal (prop: exportNewPostModal) {
 
     const [newPost, setNewPost] = useState (
       {
+
         title:"",
   
         text:"",
   
-        items:[]
+        items:[],
+
       },
     )
 
@@ -42,12 +45,24 @@ export default function AddPostModal (prop: exportNewPostModal) {
             {/* <h1 className="">{newPost.title}</h1> */}
             <input onChange={(e) => {setNewPost ({...newPost, title: e.target.value })}} className="outline-none w-full" placeholder="Title" type="text" />
             <textarea onChange={(e) => {setNewPost ({...newPost, text: e.target.value})}} className="outline-none h-full w-full" placeholder="Text" />
+
             <div className="flex justify-around w-full">
-                <button onClick={() => {prop.add(newPost)}} className="p-2 font-bold border border-[#070707] border-solid rounded-lg">Adicionar</button>
+
+                <button onClick={() => {prop.add(newPost)}} className="p-2 font-bold border border-[#070707] border-solid rounded-lg">
+                  Adicionar
+                </button>
+
                 <div className="flex gap-4">
-                    <button className="p-2 bg-red-700 font-bold border border-[#070707] border-solid rounded-lg "> Editar</button>
-                    <button onClick={() => {}} className="p-2 bg-red-700 font-bold border border-[#070707] border-solid rounded-lg ">Excluir</button>
+
+                    <button className="p-2 bg-red-700 font-bold border border-[#070707] border-solid rounded-lg "> 
+                    Editar
+                  </button>
+                  <button onClick={() => {}} className="p-2 bg-red-700 font-bold border border-[#070707] border-solid rounded-lg ">
+                      Excluir
+                  </button>
+
                 </div>
+
             </div>
 
 
