@@ -7,8 +7,6 @@ import AddPostModal from "./addPostModal"
 
 export default function PostList() {
 
-  
-
  const [groupPost, setGroupPost] = useState ( [
 
     {
@@ -73,6 +71,14 @@ export default function PostList() {
     
   ] )
 
+  /*
+  state = {
+    display: "none";
+    post: {}
+  }
+
+  */
+
   function addPost(post:IPost) {
     setGroupPost ([...groupPost, post])
     console.log(groupPost)
@@ -86,9 +92,7 @@ export default function PostList() {
 
         {groupPost.map((post) => (
           <PostProp
-            title= {post.title}
-            text= {post.text}
-            items= {post.items}
+            data={post}
           /> 
         ))}
 
@@ -96,8 +100,8 @@ export default function PostList() {
 
       <div className="pb-14">
 
-        <AddPostModal title="" add={addPost}/>
-
+        <AddPostModal add={addPost}/>
+        
       </div>
 
     </section>

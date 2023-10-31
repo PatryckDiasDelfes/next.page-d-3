@@ -1,12 +1,10 @@
 import { title } from "process"
 import { useState } from "react"
 import { IPost } from "../types/post"
-import { randomUUID } from "crypto"
 
 interface exportNewPostModal {
 
   add:(post: IPost) => void
-  title: string,
 
 }
 
@@ -51,17 +49,6 @@ export default function AddPostModal (prop: exportNewPostModal) {
                 <button onClick={() => {prop.add(newPost)}} className="p-2 font-bold border border-[#070707] border-solid rounded-lg">
                   Adicionar
                 </button>
-
-                <div className="flex gap-4">
-
-                    <button className="p-2 bg-red-700 font-bold border border-[#070707] border-solid rounded-lg "> 
-                    Editar
-                  </button>
-                  <button onClick={() => {}} className="p-2 bg-red-700 font-bold border border-[#070707] border-solid rounded-lg ">
-                      Excluir
-                  </button>
-
-                </div>
 
             </div>
 
