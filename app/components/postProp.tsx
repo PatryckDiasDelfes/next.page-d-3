@@ -8,9 +8,9 @@ import Image from 'next/image';
 
 
 interface PostProp {
-
   data: IPost
-
+  openModal: (selectedPost:IPost) => void
+  modalDisplay: boolean
 }
 
 export default function PostProp(prop: PostProp) {
@@ -25,13 +25,11 @@ export default function PostProp(prop: PostProp) {
     // } 
     // Verificar funcinalidade.
 
-    const [postModal, setPostModal] = useState (false) 
-
     return (
 
       <>
         
-        <div className="w-[58%]">
+        <div key={prop.data.id} className="w-[58%]">
 
             <div className='flex items-center'>
               <h1 className="flex font-bold text-[20px] place-items-center p-5">
@@ -39,11 +37,9 @@ export default function PostProp(prop: PostProp) {
               </h1>
 
               <div>
-                <PostModal
-                  openModal= {postModal}
-                  closeModal={() => {setPostModal(false)}}/>
+                
 
-                <button onClick={(e) => {setPostModal(true)}}>
+                <button onClick={() => {prop.openModal(prop.data)}}>
                   <Image className='flex w-7 h-7 '
                     src="/editar.ico"
                     width={500}

@@ -5,6 +5,7 @@ import { IPost } from "../types/post"
 interface exportNewPostModal {
 
   add:(post: IPost) => void
+  newId:number
 
 }
 
@@ -15,7 +16,7 @@ export default function AddPostModal (prop: exportNewPostModal) {
     const [newPost, setNewPost] = useState (
       {
 
-        id: 0,
+        id: prop.newId,
 
         title:"",
   
