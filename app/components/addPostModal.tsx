@@ -15,6 +15,8 @@ export default function AddPostModal (prop: exportNewPostModal) {
     const [newPost, setNewPost] = useState (
       {
 
+        id: 0,
+
         title:"",
   
         text:"",
